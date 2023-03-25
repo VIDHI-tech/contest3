@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+/* css variables */
+:root {
+    --first-bg-color: #FFFFFF;
+    --second-bg-color: #CED4DA;
+    --blue-shade:#0D6EFD; 
+    --first-text-color: #495057;
+}
+
+/* ---------- Reusable Some Codes ----------- */
+.my-container{
+    max-width: 1060px;
+    margin: auto;
+    overflow:hidden;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mg-top{
+    margin-top: 40px;
+}
+/* ---- header styling ------- */
+
+header {
+    padding-block: 7px;
+}
+
+.nav-list {
+    gap: 13px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--first-text-color);
+    font-size: 16px;
+}
+
+.nav-list-input input{
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+.nav-list-input .btn-outline-secondary{
+    background-color: #FFFFFF;
+    color: var(--blue-shade);
+    border: 1px solid var(--blue-shade);
+    outline-color: none;
+}
+
+.carousel {
+    background-color:  #777777;
+    height: 80vh;
+    /* font-size: 1.20rem; */
+}
+
+.card-section {
+    gap:10px;
+    font-size: 14px;
+}
+
+.carousel-item {
+    overflow-y: hidden;
+}
+
+.carousel-item img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.company-name, .hamburger{
+    display: none;
+}
+
+/* ========== Responsive Design =========== */
+
+@media (max-width: 992px){
+    .my-container{
+        max-width: 900px;
+        margin: auto;
+        overflow:hidden;
+    }
+}
+
+@media (max-width: 890px){
+    .my-container{
+        max-width: 800px;
+        margin: auto;
+        overflow:hidden;
+    }
+
+    .card-section {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card-section .card{
+        width: 40rem;
+        height: 70%;
+    }
+}
+
+@media (max-width: 790px) {
+    .my-container{
+        max-width: 700px;
+        margin: auto;
+        overflow:hidden;
+    }
+    .nav-list, .nav-list-input{
+        display: none;
+    }
+
+    .company-name, .hamburger{
+        display: block;
+    }
+}
+
+@media (max-width: 680px){
+    .my-container{
+        max-width: 600px;
+        margin: auto;
+        overflow:hidden;
+    }
+}
+
+@media (max-width: 680px){
+    .my-container{
+        max-width: 600px;
+        margin: auto;
+        overflow:hidden;
+    }
+}
+
+@media (max-width: 575px){
+    .my-container{
+        max-width: 500px;
+        margin: auto;
+        overflow:hidden;
+    }
+    .mg-top{
+        margin-top: 40px;
+    }
+
+    .card-section {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card-section .card{
+        width: 100rem;
+        height: 70%;
+    }
+
+    .forms .row input{
+        width: 100%;
+    }
+}
+
+@media (max-width: 495px){
+    .my-container{
+        max-width: 450px;
+        margin: auto;
+        overflow:hidden;
+    }
+    .mg-top{
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 460px){
+    .my-container{
+        max-width: 350px;
+        margin: auto;
+        overflow:hidden;
+    }
+    .mg-top{
+        margin-top: 40px;
+    }
+}
